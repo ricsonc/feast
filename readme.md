@@ -3,18 +3,16 @@
 This is a hack, which, with the help of the *macropy*  library, modifies the python AST at import time, with the idea of allowing for "nicer" functional programming in python.
 
 Here, we show example code for computing the sum of prime numbers less than 100.
-
-    M = 100
-    
+   
     # "feast style"
     maxfac = f[1 + (int& sqrt^ _)]
     L.prime[k : k > 1 and 0 not in map/ (mod/k) ^ {2 >> maxfac/k}]
-    print sum ^ filter/ prime/ {M}
+    print sum ^ filter/ prime/ {100}
     	
     # is equivalent to the "normal" python syntax
     maxfac = lambda k: 1 + int(sqrt(k))
     prime = lambda k: k > 1 and 0 not in [k % x for x in range(2, maxfac(k))]
-    print sum((x for x in range(M) if prime(x)))
+    print sum((x for x in range(100) if prime(x)))
 
 #### Features
 
