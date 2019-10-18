@@ -12,9 +12,9 @@ Here, we show example code for computing the sum of prime numbers less than 100.
     print sum ^ filter/ prime/ {M}
 	
     # is equivalent to the "normal" python syntax
-    maxfac = lambda k: 1 + int(sqrt(k))
-    prime = lambda k: k > 1 and 0 not in [k % x for x in range(2, maxfac(k))]
-    print sum((x for x in range(M) if prime(x)))
+    maxfac = f[1 + (int& sqrt^ _)]
+    L.prime[k : k > 1 and 0 not in map/ (mod/k) ^ {2 >> maxfac/k}]
+    print sum ^ filter/ prime/ {M}
 
 #### Features
 

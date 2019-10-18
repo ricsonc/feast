@@ -28,6 +28,6 @@ print sum((x for x in range(M) if prime(x)))
 # functional style with FEAST
 
 with h:
-    L.maxfac[k : 1 + (int& sqrt^ k)]
-    L.prime[k : k > 1 and 0 not in map/ f[mod(k, _)] ^ {2 >> maxfac/k}]
+    maxfac = f[1 + (int& sqrt^ _)]
+    L.prime[k : k > 1 and 0 not in map/ (mod/k) ^ {2 >> maxfac/k}]
     print sum ^ filter/ prime/ {M}
