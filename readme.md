@@ -16,25 +16,25 @@ Here, we show example code for computing the sum of prime numbers less than 100.
     print sum((x for x in range(M) if prime(x)))
 
 1. currying: all functions are automatically curried
-2. haskell style composition and application
-`&` is composition
-`^` is application (lower precedence than `&`)
-`/` is application (higher precedence than `&`)
-Examples:
-`f & g & h ^ x/ y/ z`
-is equivalent to the haskell syntax
-`f . g . h $ x y z`
-is equivalent to the python syntax
-`f(g(h(x(y)(z))))`
-3. nicer syntax for defining functions
-`L.foo[x : stuff]`
-is equivalent to
-`foo = lambda x: stuff`
-4. nicer syntax for creating lambdas (macropy feature, NOT mine)
-`f[_+2] `
-is equivalent to
-`lambda x: x+2`
-5. nicer ranges
+2. haskell style composition and application <br>
+`&` is composition <br>
+`^` is application (lower precedence than `&`) <br>
+`/` is application (higher precedence than `&`) <br>
+Examples: <br>
+`f & g & h ^ x/ y/ z` <br>
+is equivalent to the haskell syntax <br>
+`f . g . h $ x y z` <br>
+is equivalent to the python syntax <br>
+`f(g(h(x(y)(z))))` <br>
+3. nicer syntax for defining functions <br>
+`L.foo[x : stuff]` <br>
+is equivalent to <br>
+`foo = lambda x: stuff` <br>
+4. nicer syntax for creating lambdas (macropy feature, NOT mine) <br>
+`f[_+2] ` <br>
+is equivalent to <br>
+`lambda x: x+2` <br>
+5. nicer ranges 
 ```
 {a >> b}
 {N}
