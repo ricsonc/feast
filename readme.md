@@ -1,4 +1,4 @@
-### Functionally Enhanced Abstract Syntax Tree (FEAST)
+## Functionally Enhanced Abstract Syntax Tree (FEAST)
 
 This is a hack, which, with the help of the *macropy*  library, modifies the python AST at import time, with the idea of allowing for "nicer" functional programming in python.
 
@@ -15,6 +15,8 @@ Here, we show example code for computing the sum of prime numbers less than 100.
     maxfac = lambda k: 1 + int(sqrt(k))
     prime = lambda k: k > 1 and 0 not in [k % x for x in range(2, maxfac(k))]
     print sum((x for x in range(M) if prime(x)))
+
+#### Features
 
 1. currying: all functions are automatically curried
 2. haskell style composition and application <br>
@@ -42,3 +44,6 @@ is equivalent to <br>
 `range(a,b)` <br>
 `range(N)`
 
+#### Usage
+
+The feast macro is defined in feast.py. Read the *macropy* documentation to understand how to use macros. This was developed with python2.7 and macropy 1.0.3. At the moment, there are some minor incompatibilities with python3.x. The feast macro takes a single boolean argument, which, when set to `False`, will not modify `&^/` inside quicklambdas. This is useful if you want to do normal arithmetic.
