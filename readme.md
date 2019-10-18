@@ -46,4 +46,4 @@ is equivalent to <br>
 
 #### Usage
 
-The feast macro is defined in feast.py. Read the *macropy* documentation to understand how to use macros. This was developed with python2.7 and macropy 1.0.3. At the moment, there are some minor incompatibilities with python3.x. The feast macro takes a single boolean argument, which, when set to `False`, will not modify `&^/` inside quicklambdas. This is useful if you want to do normal arithmetic.
+The feast macro is defined in feast.py. Read the *macropy* documentation to understand how to use macros. See `main.py` for a working example. This was developed with python2.7 and macropy 1.0.3. At the moment, there are some minor incompatibilities with python3.x. The feast macro takes a single boolean argument, which, when set to `False`, will not modify `&^/` inside quicklambdas. This is useful if you want to do normal arithmetic.
