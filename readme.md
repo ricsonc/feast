@@ -5,7 +5,8 @@ This is a hack, which, with the help of the *macropy*  library, modifies the pyt
 Here, we show example code for computing the sum of prime numbers less than 100.
 
     M = 100
-
+    
+    # "feast style"
     L.maxfac[k : 1 + (int& sqrt^ k)]
     L.prime[k : k > 1 and 0 not in map/ f[mod(k, _)] ^ {2 >> maxfac/k}]
     print sum ^ filter/ prime/ {M}
