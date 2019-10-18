@@ -1,4 +1,4 @@
-###Functionally Enhanced Abstract Syntax Tree (FEAST)
+### Functionally Enhanced Abstract Syntax Tree (FEAST)
 
 This is a hack, which, with the help of the *macropy*  library, modifies the python AST at import time, with the idea of allowing for "nicer" functional programming in python.
 
