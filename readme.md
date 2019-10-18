@@ -34,13 +34,10 @@ is equivalent to <br>
 `f[_+2] ` <br>
 is equivalent to <br>
 `lambda x: x+2` <br>
-5. nicer ranges 
-```
-{a >> b}
-{N}
-```
-is equivalent to
-```
-range(a,b)
-range(N)
-```
+5. nicer ranges <br>
+`{a >> b}` <br>
+`{N}` <br>
+is equivalent to <br>
+`range(a,b)` <br>
+`range(N)`
+
